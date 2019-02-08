@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "material-v2-mod": {
+      "root": "projects/material-v2-mod",
+      "sourceRoot": "projects/material-v2-mod/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/material-v2-mod/tsconfig.lib.json",
+            "project": "projects/material-v2-mod/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/material-v2-mod/src/test.ts",
+            "tsConfig": "projects/material-v2-mod/tsconfig.spec.json",
+            "karmaConfig": "projects/material-v2-mod/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/material-v2-mod/tsconfig.lib.json",
+              "projects/material-v2-mod/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "material-v2"

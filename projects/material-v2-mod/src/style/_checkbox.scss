@@ -1,0 +1,36 @@
+@import '~@angular/material/theming';
+
+@mixin _mat-checkbox-reset-color($color) {
+  $extracted_color: mat-color($color);
+
+  .mat-checkbox-frame {
+    border-color: $extracted_color;
+  }
+
+  .mat-checkbox-background {
+    background-color: transparent!important;
+  }
+
+  .mat-checkbox-checkmark {
+    //padding: 2px;
+  }
+
+  .mat-checkbox-checkmark-path {
+    stroke: $extracted_color!important;
+    stroke-width: 3.53333px;// TODO: FIX
+  }
+}
+
+@mixin mat-v2-checkbox($material-theme) {
+  $primary: map-get($material-theme, primary);
+
+  mat-checkbox.mat-primary {
+    @include _mat-checkbox-reset-color($primary);
+  }
+
+  $accent: map-get($material-theme, accent);
+  mat-checkbox.mat-accent {
+    @include _mat-checkbox-reset-color($accent);
+  }
+}
+

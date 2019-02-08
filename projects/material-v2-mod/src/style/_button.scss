@@ -1,0 +1,10 @@
+@mixin mat-v2-button($material-theme) {
+  .mat-v2.mat-button {
+    border: 1px solid #dadce0 !important;
+  }
+
+  .mat-v2.mat-raised-button {
+    box-shadow: none!important;
+    border: 1px solid transparent !important;
+  }
+}

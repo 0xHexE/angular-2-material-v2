@@ -1,0 +1,5 @@
+@mixin mat-v2-autocomplete($material-theme) {
+  .mat-autocomplete-panel.mat-autocomplete-visible {
+    border-radius: 4px!important;
+  }
+}

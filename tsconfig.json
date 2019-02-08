@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "material-v2-mod": [
+        "dist/material-v2-mod"
+      ],
+      "material-v2-mod/*": [
+        "dist/material-v2-mod/*"
+      ]
+    }
   }
 }

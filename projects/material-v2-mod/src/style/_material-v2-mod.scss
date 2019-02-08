@@ -1,0 +1,15 @@
+@import "./autocomplete";
+@import "./button";
+@import "./card";
+@import "./utils";
+@import "./checkbox";
+@import "./calender";
+
+@mixin material-v2-mod-theme($material-theme) {
+  @include mat-v2-utils($material-theme);
+  @include mat-v2-button($material-theme);
+  @include mat-v2-card($material-theme);
+  @include mat-v2-autocomplete($material-theme);
+  @include mat-v2-checkbox($material-theme);
+  @include mat-v2-calender($material-theme);
+}
