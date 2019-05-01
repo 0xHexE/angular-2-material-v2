@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "projects/material-v2-mod/package.json"
+      ]
+    }
+  }
+}
